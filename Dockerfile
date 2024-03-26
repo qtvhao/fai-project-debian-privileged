@@ -1,3 +1,3 @@
-FROM ghcr.io/qtvhao/fai-project-debian:main
+FROM busybox
 
 RUN export RUNLEVEL=1 && fai-setup -vf
