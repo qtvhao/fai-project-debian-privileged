@@ -79,6 +79,7 @@ outputs:
     description: 'Builder node flags (deprecated, use nodes output instead)'
 
 runs:
-  using: 'ghcr.io/qtvhao/fai-project-debian:main'
-  main: 'dist/index.js'
-  post: 'dist/index.js'
+  using: 'docker'
+  image: 'Dockerfile'
+  pre-entrypoint: 'setup.sh'
+  entrypoint: 'main.sh'
