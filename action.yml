@@ -79,6 +79,6 @@ outputs:
     description: 'Builder node flags (deprecated, use nodes output instead)'
 
 runs:
-  using: 'node20'
+  using: 'ghcr.io/qtvhao/fai-project-debian:main'
   main: 'dist/index.js'
   post: 'dist/index.js'
